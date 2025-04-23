@@ -249,13 +249,13 @@ position: relative;
 }
 
 .project-item.reverse {
-flex-direction: row-reverse;
+flex-direction: row;
 }
 
 .project-image-container {
 flex: 1;
 overflow: hidden;
-border-radius: 8px;
+border-radius: 10px;
 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 position: relative;
 transition: all 0.5s ease;
@@ -366,7 +366,7 @@ bottom: -5px;
 left: 0;
 width: 40px;
 height: 3px;
-background-color: #212529;
+
 }
 
 .project-tags {
@@ -462,6 +462,11 @@ animation: activateDot 6s infinite 4s;
   gap: 4rem;
 }
 
+.tech-icons {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
 .carousel-container {
   height: 250px;
 }
@@ -635,8 +640,10 @@ footer {
     font-size: 3.5rem;
   }
   nav {
+    display: none;
     position: static;
     margin-bottom: 4rem;
+  
   }
   .nav-list {
     justify-content: flex-start;
